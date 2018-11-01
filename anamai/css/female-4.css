@@ -1,0 +1,81 @@
+﻿#female-4 article {
+	width: 100%;
+}
+#female-4 #pic {
+	background: url('../images/female-4/calendar-big.png') no-repeat center center;
+	background-color: #e07b83;
+	width: 300px;
+	height: 387px;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+	padding: 5px;
+}
+#female-4 #pd {
+	width: auto;
+	height: 357px;
+	margin-left: 325px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+	background-color: #e07b83;
+	font-family: 'LayijiMaHaNiYomV15Regular';
+	font-size: 28px;
+	padding: 20px;
+}
+#female-4 #tk {
+	width: auto;
+	margin-top: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+	background-color: #e07b83;
+	font-family: 'LayijiMaHaNiYomV15Regular';
+	font-size: 28px;
+	padding: 20px;
+}
+#female-4 p span {
+	font-size: 36px;
+	color: #fff;
+}
+@media screen and (max-width: 920px) {
+#female-4 #pic {
+	background-size: 60%;
+	width: 335px;
+	height: 478px;
+	float: none;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+#female-4 #pd {
+	margin: 20px auto 0 auto;
+	height: auto;
+}
+}
+@media screen and (max-width: 400px) {
+#female-4 #pic {
+	background-size: 40%;
+	width: auto;
+	height: 200px;
+	margin-bottom: 20px;
+}
+#female-4 #pd {
+	margin: 0 auto 0 auto;
+	height: auto;
+	font-size: 20px;
+}
+#female-4 #tk,#female-4 p span {
+	font-size: 20px;
+}
+}

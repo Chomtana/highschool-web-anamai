@@ -1,0 +1,228 @@
+﻿#male-2 .container-pic {
+	margin: 0 auto 0 auto;
+	width: 660px;
+	height: 400px;
+	position: relative;
+}
+#male-2 #picture {
+	width: 660px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	border: 10px #c0a68a solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+#male-2 nav {
+	position: relative;
+	width: 680px;
+}
+#male-2 .button {
+	font-family: 'LayijiMaHaNiYomV15Regular';
+	font-size: 24px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #c0a68a;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px 0px #ac9173, 0px 5px 5px #000;
+}
+#male-2 .button:active {
+	top: 8px;
+	box-shadow: 0px 2px 0px 0px #ac9173, 0px 2px 5px #000;
+}
+#male-2 .button:hover {
+	cursor: pointer;
+	background-color: #BDA284;
+}
+#male-2 .button span {
+	background-color: #ac9173;
+	background-image: url('../images/left_arrow.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	right: 25%;
+	margin-top: -9px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 0px #827066;
+}
+#male-2 .left {
+	left: 0px;
+}
+#male-2 .right {
+	right: 0px;
+}
+#male-2 .right span {
+	background-image: url('../images/right_arrow.png');
+}
+#male-2 .button:active span {
+	top: 50%;
+	margin-top: -12px;
+	box-shadow: 0px 3px 0px #19120f, 0px 6px 3px #382e29;
+}
+#male-2 .container-art {
+	display: table;
+	margin-top: 80px;
+}
+#male-2 article {
+	height: 100%;
+	display: table-row;
+}
+#male-2 section {
+	width: 33%;
+	margin-left: 5px;
+	display: table-cell;
+	background-color: #338a8f;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 15px;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px#000;
+	box-shadow: 0 0 5px #000;
+	font-family: 'LayijiMaHaNiYomV15Regular';
+	font-size: 28px;
+	color: #000;
+}
+#male-2 section h3 {
+	font-size: 36px;
+	color: #fff;
+}
+/* //////////////////////////////////////////// */
+#male-2 #bg {
+	background: url('../images/male-2/bg.png');
+	width: 6000px;
+	height: 400px;
+	overflow: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#male-2 #char {
+	position: absolute;
+	left: 164px;
+	bottom: -20px;
+}
+#male-2 .char-1 {
+	background: url('../images/male-2/char-1.png');
+	width: 80px;
+	height: 191px;
+}
+#male-2 .char-2 {
+	background: url('../images/male-2/char-2.png');
+	width: 112px;
+	height: 233px;
+}
+#male-2 .char-3 {
+	background: url('../images/male-2/char-3.png');
+	width: 122px;
+	height: 293px;
+}
+#male-2 .char-4 {
+	background: url('../images/male-2/char-4.png');
+	width: 147px;
+	height: 322px;
+}
+#male-2 #tree {
+	background: url('../images/tree.png');
+	width: 6000px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	z-index: 1000;
+}
+@media screen and (max-width:1020px){
+#male-2 .container-art {
+	display: block;
+}
+#male-2 article {
+	display: block;
+	text-align: center;
+}
+#male-2 section {
+	width: 90%;
+	margin: auto;
+	display: block;
+	text-align: left;
+}
+}
+@media screen and (max-width:700px){
+#male-2 .container-art {
+	margin-top: 15px;
+}
+#male-2 .container-pic {
+	margin: 0 auto 0 auto;
+	width: 400px;
+	height: 340px;
+	position: relative;
+	background-image: url('../images/male-2/m-bg-s.png');
+	border-radius: 10px;
+}
+#male-2 nav {
+	display: none;
+}
+#picture {
+	display: none;
+}
+}
+@media screen and (max-width:410px){
+#male-2 .container-pic {
+	width: 240px;
+	height: 204px;
+	background-size: 100%;
+}
+#male-2 section {
+	font-size: 21px;
+}
+#male-2 section h3 {
+	font-size: 30px;
+}
+}
+@media screen and (max-width:290px){
+#male-2 section {
+	font-size: 21px;
+	width: 80%;
+}
+#male-2 .container-pic {
+	width: 192px;
+	height: 163px;
+	background-size: 100%;
+}
+}
+
+/* marker */
+#male-2 #markers {
+	position: absolute;
+	left: 45%;
+	top: 20px;
+}
+#male-2 .marker {
+	background: url('../images/marker.png');
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	text-indent: -9000px;
+	display: inline-block;
+	cursor: pointer;
+	margin:2px;
+}
+#male-2 .marker:hover {
+	background-position: 0 -10px;
+}
+#male-2 .mark {
+	background-position: 0 -10px;
+}

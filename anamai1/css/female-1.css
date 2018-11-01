@@ -1,0 +1,186 @@
+﻿#female-1 .container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-bottom: 100px;
+}
+#female-1 .fa {
+	padding-bottom: 100px;
+}
+#female-1 .picture {
+	width: 447px;
+	background: url('../images/bg-f.jpg');
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 15px;
+	float: left;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+#female-1 article {
+	width: auto;
+	margin-left: 497px;
+}
+#female-1 .detail {
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px#000;
+	box-shadow: 0 0 5px #000;
+}
+#female-1 .detail a {
+	font-family: 'LayijiMaHaNiYomV15Regular';
+	font-size: 36px;
+	text-decoration: none;
+	padding: 10px 30px;
+	display: block;
+	cursor: pointer;
+	color: #fff;
+	background: #e07b83;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#female-1 .detail:hover a  {
+	background: #D54F5A;
+}
+#female-1 .detail div {
+	font-family: 'LayijiMaHaNiYomV15Regular';
+	font-size: 28px;
+	padding: 15px;
+	background-color: #fcabaf;
+}
+/* //////////////////////////////////////////// */
+#female-1 .picture {
+	width: 447px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+#female-1 .pic {
+	cursor: pointer;
+	opacity: 0.6;
+}
+#female-1 #bg {
+	background: url('../images/female-1/bg.png');
+	width: 447px;
+	height: 414px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+#female-1 #ovary {
+	background: url('../images/female-1/1.png');
+	width: 74px;
+	height: 65px;
+	position: absolute;
+	left: 167px;
+	top: 60px;
+	z-index: 110;
+}
+#female-1 #uterus {
+	background: url('../images/female-1/2.png');
+	width: 136px;
+	height: 102px;
+	position: absolute;
+	left: 153px;
+	top: 120px;
+	z-index: 110;
+}
+#female-1 #oviduct {
+	background: url('../images/female-1/3.png');
+	width: 75px;
+	height: 124px;
+	position: absolute;
+	left: 144px;
+	top: 34px;
+	z-index: 100;
+}
+#female-1 #vagina {
+	background: url('../images/female-1/4.png');
+	width: 132px;
+	height: 128px;
+	position: absolute;
+	left: 165px;
+	top: 178px;
+	z-index: 100;
+}
+#female-1 #outside {
+	background: url('../images/female-1/5.png');
+	width: 162px;
+	height: 87px;
+	position: absolute;
+	left: 85px;
+	top: 284px;
+	z-index: 200;
+}
+#female-1 .hover {
+	opacity: 1.0;
+}
+#female-1 .clicked {
+	opacity: 1;
+}
+
+@media screen and (max-width: 1060px){
+#female-1 .detail a {
+	font-size: 30px;
+}
+}
+@media screen and (max-width: 930px){
+#female-1 article {
+	width: 90%;
+	display: inline-block;
+	position: relative;
+	margin: 10px auto 0px auto;
+	float: none;
+}
+#female-1 .picture {
+	width: 447px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	margin: 0 auto 0px auto;
+	float: none;
+}
+#female-1 .detail div {
+	font-size: 23px;
+}
+}
+@media screen and (max-width: 530px){
+#female-1 .picture {
+	padding: 0;
+	width: 268px;
+	height: 240px;
+	background-image: url('../images/female-1/bg-s.png');
+	background-color: #e07b83;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#female-1 #bg,#female-1 #ovary,#female-1 #uterus,#female-1 #oviduct,#female-1 #vagina,#female-1 #outside {
+	display: none;
+}
+#female-1 .detail a {
+	font-size: 23px;
+}
+}
+@media screen and (max-width: 280px){
+#female-1 .picture {
+	width: 200px;
+	height: 172px;
+	background-image: url('../images/female-1/bg-s.png');
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#female-1 .detail a {
+	font-size: 18px;
+}
+#female-1 .detail div {
+	font-size: 16px;
+}
+}

@@ -1,0 +1,213 @@
+﻿	<div class="container">
+		<div id="female-2" class="lide">
+			<h2>จากเด็กสู่วัยรุ่น</h2>
+			<a class="back" href="#female">ย้อนกลับ</a>
+			<a class="back home" href="#home">หน้าแรก</a>
+			<div class="content">
+				<div class="container-pic">
+					<div id="picture">
+						<div id="bg">
+						</div>
+						<div id="char" class="char-1">
+						</div>
+						<div id="tree">
+						</div>
+					</div>
+					<nav>
+						<a class="button left" id="prev"><span></span></a>
+						<ul id="markers">
+							<li data-slide="1" class="marker mark"></li>
+							<li data-slide="2" class="marker"></li>
+							<li data-slide="3" class="marker"></li>
+							<li data-slide="4" class="marker"></li>
+							<li data-slide="5" class="marker"></li>
+							<li data-slide="6" class="marker"></li>
+						</ul>
+						<a class="button right" id="next"><span></span></a>
+					</nav>
+				</div>
+				<div class="container-art">
+					<article>
+						<section>
+							<h3>ด้านร่างกาย</h3>
+							<ul>
+								<li>- ส่วนสูงและน้ำหนักเพิ่มขึ้นอย่างรวดเร็ว</li>
+								<li>- สะโพกขยายออก เอวคอด</li>
+								<li>- หน้าอกโตขึ้น</li>
+								<li>- เสียงแหลมหวาน</li>
+								<li>- มีขนขึ้นที่อวัยวะเพศและรักแร้</li>
+								<li>- อาจมีสิวหรือกลิ่นตัว</li>
+								<li>- เริ่มมีประจำเดือน</li>
+							</ul>
+						</section>
+						<section>
+							<h3>ด้านจิตใจและอารมณ์ </h3>
+							<ul>
+								<li>- อารมณ์รุนแรงแต่อ่อนไหวไม่มั่นคง</li>
+								<li>- ใจร้อน</li>
+								<li>- เปลี่ยนแปลงได้ง่าย หันเหไปสู่ความต้องการความสนใจใหม่ 
+								ๆ อยู่เสมอ</li>
+							</ul>
+						</section>
+						<section>
+							<h3>ด้านสังคม </h3>
+							<ul>
+								<li>- เชื่อเพื่อนมากกว่าพ่อแม่</li>
+								<li>- ไม่ต้องการให้พ่อแม่บังคับ แต่ต้องการคำแนะนำ</li>
+								<li>- ต้องการเป็นอิสระ</li>
+								<li>- มีความเป็นส่วนตัว</li>
+								<li>- อยู่กับเพื่อนเพศเดียวกันเป็นกลุ่ม</li>
+								<li>- ต้องการให้ตนเป็นที่รู้จัก</li>
+								<li>- เริ่มสนใจเพื่อนต่างเพศ</li>
+							</ul>
+						</section>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	var slide = 1;
+	
+	function updatedot () {
+		$('*').removeClass("mark");
+		$('li[data-slide$="'+slide+'"]').addClass("mark");
+	}
+	
+	$('#next').click(function(){
+		if (slide == 1){
+			$('#bg, #tree').animate({
+				left: '-1850'
+			}, 2000);
+			setTimeout(function(){
+				$('#char').removeClass().addClass('char-1');
+			}, 600);
+			slide = 2;
+		} else {
+			if (slide == 2){
+				$('#bg, #tree').animate({
+					left: '-2670'
+				}, 1000);
+				setTimeout(function(){
+					$('#char').removeClass().addClass('char-2');
+				}, 600);
+				slide = 3;
+			}else{
+				if (slide == 3){
+					$('#bg, #tree').animate({
+						left: '-3650'
+					}, 1000);
+					setTimeout(function(){
+						$('#char').removeClass().addClass('char-3');
+					}, 600);
+					slide = 4;
+				}else{
+					if (slide == 4){
+						$('#bg, #tree').animate({
+							left: '-4500'
+						}, 1000);
+						setTimeout(function(){
+							$('#char').removeClass().addClass('char-4');
+						}, 600);
+						slide = 5;
+					}else{
+						if(slide == 5){
+							$('#bg, #tree').animate({
+								left: '-5340'
+							}, 1000);
+							setTimeout(function(){
+								$('#char').removeClass().addClass('char-4');
+							}, 600);
+							slide = 6;
+						}else{
+							if(slide == 6){
+								$('#bg, #tree').animate({
+									left: '0'
+								}, 2000);
+								setTimeout(function(){
+									$('#char').removeClass().addClass('char-1');
+								}, 600);
+								slide = 1;
+							}
+						}
+					}
+				}
+			}
+		}
+		updatedot();
+	});
+	$('#prev').click(function(){
+		if (slide == 6){
+			$('#bg, #tree').animate({
+				left: '-4500'
+			}, 1000);
+			slide = 5;
+		} else {
+			if (slide == 5){
+				$('#bg, #tree').animate({
+					left: '-3650'
+				}, 1000);
+				setTimeout(function(){
+					$('#char').removeClass().addClass('char-3');
+				}, 600);
+				slide = 4;
+			}else{
+				if (slide == 4){
+					$('#bg, #tree').animate({
+						left: '-2670'
+					}, 1000);
+					setTimeout(function(){
+						$('#char').removeClass().addClass('char-2');
+					}, 600);
+					slide = 3;
+				}else{
+					if (slide ==3){
+						$('#bg, #tree').animate({
+							left: '-1850'
+						}, 1000);
+						setTimeout(function(){
+							$('#char').removeClass().addClass('char-1');
+						}, 600);
+						slide = 2;
+					}else{
+						if(slide == 2){
+							$('#bg, #tree').animate({
+								left: '0'
+							}, 2000);
+							setTimeout(function(){
+								$('#char').removeClass().addClass('char-1');
+							}, 600);
+							slide = 1;
+						}else{
+							if(slide == 1){
+								$('#bg, #tree').animate({
+									left: '-5340'
+								}, 1000);
+								setTimeout(function(){
+									$('#char').removeClass().addClass('char-4');
+								}, 600);
+								slide = 6;
+							}
+						}
+					}
+				}
+			}
+		}
+		updatedot();
+	});
+	
+	$(".marker").click(function (e) {
+		$('*').removeClass("mark");
+		$(this).addClass("mark");
+		if (slide != $(this).attr("data-slide")) {
+			if ($(this).attr("data-slide") == 1) {
+				slide = 2;
+				$("#prev").trigger("click");
+			} else {
+				slide = $(this).attr("data-slide")-1;
+				$("#next").trigger("click");
+			}
+		}
+	});
+	
+</script>

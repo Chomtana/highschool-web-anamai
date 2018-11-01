@@ -1,0 +1,259 @@
+﻿	<div class="container">
+		<div id="male-3" class="lide">
+			<h2>สุขอนามัยทางเพศ</h2>
+			<a class="back" href="#male">ย้อนกลับ</a>
+			<a class="back home" href="#home">หน้าแรก</a>
+			<div class="content">
+				<div class="al">
+					<div id="slides">
+						<div id="char">
+						</div>
+						<div id="bg-1" class="slides">
+						</div>
+						<div id="bg-2" class="slides">
+						</div>
+						<div id="bg-3" class="slides">
+						</div>
+						<div id="slide-1" class="slides">
+							<div id="fall">
+							</div>
+							<div id="hole">
+							</div>
+							<div id="lavatory">
+							</div>
+							<div id="shower">
+							</div>
+							<div id="soap">
+							</div>
+						</div>
+						<div id="slide-2" class="slides">
+							<div id="lamp">
+							</div>
+							<div id="towel">
+							</div>
+							<div id="wardrobe">
+							</div>
+						</div>
+						<div id="slide-3" class="slides">
+							<div id="bush">
+							</div>
+							<div id="cloud">
+							</div>
+							<div id="turbine">
+							</div>
+							<div id="wind">
+							</div>
+						</div>
+					</div>
+					<nav>
+						<a class="button"  href="#prev"><span></span></a>
+						<ul id="markers">
+							<li id="a1" class="marker"><a href="#slide-1">Slide 1</a>
+							</li>
+							<li id="a2" class="marker"><a href="#slide-2">Slide 2</a>
+							</li>
+							<li id="a3" class="marker"><a href="#slide-3">Slide 3</a>
+							</li>
+						</ul>
+						<a class="button right" href="#next"><span></span></a>
+					</nav>
+					<article>
+						<ol id="p1">
+							<li>- ทุกครั้งที่อาบน้ำต้องปลิ้นหนังหุ้มปลายออกมาเพื่อทำความสะอาด 
+							ชำระคราบไคลที่หมักหมม อยู่ภายใต้หนังหุ้มปลายออกหรือที่เรียกว่า 
+							"ขี้เปียก" ซึ่งเป็นขี้ไคลที่เปียก เป็นสิ่งที่ก่อมะเร็งปากมดลูกในคู่นอนได้<br />
+							</li>
+							<li>- ปัสสาวะควรถ่ายจนหมด จะได้ไม่หมักหมม ก่อให้เกิดเชื้อแบคทีเรียได้</li>
+						</ol>
+						<ol id="p2">
+							<li>- หลังทำความสะอาดแล้ว ควรซับด้วยผ้าฝ้าย และตากผ้าให้แห้งจะได้ไม่อับชื้น</li>
+							<li>- ขนอ่อนๆ ที่หัวเหน่า ช่วยป้องกันกลิ่นอวัยวะเพศ ไม่ควรถอนทิ้ง 
+							โกนหรือย้อมสี แต่สามารถเล็มตัดแต่งให้สวยงามได้</li>
+							<li>- ไม่ใช้กางเกงใน กางเกง ผ้าเช็ดตัว ผ้าขาวม้า ปะปนกับคนอื่น 
+							เพราะอาจทำให้เราติดเชื้อได้</li>
+						</ol>
+						<ol id="p3">
+							<li>- ไม่ควรนุ่งกางเกงในที่รัดแน่นเกินไป หรือเปียกชื้น</li>
+							<li>- ควรเลือกกางเกงในที่ตัดเย็บด้วยเนื้อผ้าที่ระบายอากาศได้ดี</li>
+						</ol>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	/* marker */
+	$('.marker').click(function(){
+		$('*').removeClass("mark");
+		$(this).addClass("mark");
+	});
+	/* start */
+	var page = 1;
+	$("#a1").addClass("mark");
+	/* function slide */
+	function aone(){
+		$('#slide-1, #bg-1').animate({
+			left: -600,
+			opacity: 0
+		}, 1000);
+		$('#slide-2, #bg-2').css('left', '600px')
+			.animate({
+				left: 0,
+				opacity: 1
+			}, 1000);
+		$('#p1').fadeOut(1000);
+		$('#p2').fadeIn(1000);
+		page = 2;
+		$('*').removeClass("mark");
+		$("#a2").addClass("mark");
+	}
+	
+	function atwo(){
+		$('#slide-2, #bg-2').animate({
+			left: -600,
+			opacity: 0
+		}, 1000);
+		$('#slide-3, #bg-3').css('left', '600px')
+			.animate({
+				left: 0,
+				opacity: 1
+			}, 1000);
+		$('#p2').fadeOut(1000);
+		$('#p3').fadeIn(1000);
+		page = 3;
+		$('*').removeClass("mark");
+		$("#a3").addClass("mark");
+	}
+	
+	function athree(){
+		$('#slide-3, #bg-3').animate({
+			left: 1200,
+			opacity: 0
+		}, 1000);
+		$('#slide-2, #bg-2').css({'left': '-600px', 'opacity': '0'})
+			.animate({
+				left: 600,
+				opacity: 1
+			}, 1000);
+		$('#slide-1, #bg-1').css('left', '-1200px')
+			.animate({
+				left: 0,
+				opacity: 1
+			}, 1000);
+		$('#p3').fadeOut(1000);
+		$('#p1').fadeIn(1000);
+		page = 1;
+		$('*').removeClass("mark");
+		$("#a1").addClass("mark");
+	}
+	
+	function bone(){
+		$('#slide-1, #bg-1').animate({
+			left: -1200,
+			opacity: 0
+		}, 1000);
+		$('#slide-2, #bg-2').css({'left': '600px', 'opacity': '0'})
+			.animate({
+				left: -600,
+				opacity: 1
+			}, 1000);
+		$('#slide-3, #bg-3').css('left', '1200px')
+			.animate({
+				left: 0,
+				opacity: 1
+			}, 1000);
+		$('#p1').fadeOut(1000);
+		$('#p3').fadeIn(1000);
+		page = 3;
+		$('*').removeClass("mark");
+		$("#a3").addClass("mark");
+	}
+	
+	function btwo(){
+		$('#slide-2, #bg-2').animate({
+			left: 600,
+			opacity: 0
+		}, 1000);
+		$('#slide-1, #bg-1').css('left', '-600px')
+			.animate({
+				left: 0,
+				opacity: 1
+			}, 1000);
+		$('#p2').fadeOut(1000);
+		$('#p1').fadeIn(1000);
+		page = 1;
+		$('*').removeClass("mark");
+		$("#a1").addClass("mark");
+	}
+	
+	function bthree(){
+		$('#slide-3, #bg-3').animate({
+			left: 600,
+			opacity: 0
+		}, 1000);
+		$('#slide-2, #bg-2').css('left', '-600px')
+			.animate({
+				left: 0,
+				opacity: 1
+			}, 1000);
+		$('#p3').fadeOut(1000);
+		$('#p2').fadeIn(1000);
+		page = 2;
+		$('*').removeClass("mark");
+		$("#a2").addClass("mark");
+	}
+	/* click slide 1 */
+	$('#a1').click(function(){
+		if(page === 2) {
+			btwo();
+		}
+		if(page === 3) {
+			athree();
+		}
+	});
+	/* click slide 2 */
+	$('#a2').click(function(){
+		if(page === 3) {
+			bthree();
+		}
+		if(page === 1) {
+			aone();
+		}
+	});
+	/* click slide 3 */
+	$('#a3').click(function(){
+		if(page === 1) {
+			bone();
+		}
+		if(page === 2) {
+			atwo();
+		}
+		event.preventDefault();
+	});
+	/* click prev */
+	$('a[href$="#prev"]').click(function(event){
+		if(page === 1) {
+			bone();
+		}else{
+			if(page === 2) {
+				btwo();
+			}else{
+			bthree();
+			}
+		}
+		event.preventDefault();
+	});
+	/* click next */
+	$('a[href$="#next"]').click(function(event){
+		if(page === 1) {
+			aone();
+		}else{
+			if(page === 2) {
+				atwo();
+			}else{
+				athree();
+			}
+		}
+		event.preventDefault();
+	});
+</script>

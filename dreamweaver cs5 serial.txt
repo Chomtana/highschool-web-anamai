@@ -1,0 +1,60 @@
+Adobe Dreamweaver CS5 Serial Number
+1192-1828-2238-5178-3799-1361
+1192 1303 1925 5824 2535 3909
+... 1192-1274-5709-4573-8000-9774
+1192-1927-7762-6383-0202-0474
+1192-1627-3787-6401-6659-1570
+1192-1980-7256-6209-7157-2111
+1192-1852-9320-0140-1786-2748
+1192-1258-8972-6398-3863-9299
+1192-1015-3447-7982-8441-4483
+1325-1532-2534-3898-7565-8767
+Before applying the serial number you have to block some adobe website so
+copy&paste the following ip addresses to prevent from getting invalid serial number by adobe
+For all Adobe Products
+HOSTS FILE:
+open your hosts file from the directory C: \ Windows \ system32 \ drivers \ etc\hosts (open with note pad)
+127.0.0.1 localhost
+127.0.0.1 hl2rcv.adobe.com
+127.0.0.1 adobeereg.com
+127.0.0.1 activate.adobe.com
+127.0.0.1 practivate.adobe.com
+127.0.0.1 ereg.adobe.com
+127.0.0.1 activate.wip3.adobe.com
+127.0.0.1 ereg.wip3.adobe.com
+127.0.0.1 wip3.adobe.com
+127.0.0.1 activate-sea.adobe.com
+127.0.0.1 wwis-dubc1-vip60.adobe.com
+127.0.0.1 activate-sjc0.adobe.com
+127.0.0.1 3dns.adobe.com
+127.0.0.1 3dns-1.adobe.com
+127.0.0.1 3dns-2.adobe.com
+127.0.0.1 3dns-3.adobe.com
+127.0.0.1 3dns-4.adobe.com
+127.0.0.1 adobe-dns.adobe.com
+127.0.0.1 adobe-dns-1.adobe.com
+127.0.0.1 adobe-dns-2.adobe.com
+127.0.0.1 adobe-dns-3.adobe.com
+127.0.0.1 adobe-dns-4.adobe.com
+127.0.0.1 adobe-dns-5.adobe.com
+127.0.0.1 hh-software.com
+127.0.0.1 www.hh-software.com
+127.0.0.1 activate.adobe.de
+127.0.0.1 practivate.adobe.de
+127.0.0.1 ereg.adobe.de
+127.0.0.1 activate.wip3.adobe.de
+127.0.0.1 wip3.adobe.de
+127.0.0.1 3dns-3.adobe.de
+127.0.0.1 3dns-2.adobe.de
+127.0.0.1 adobe-dns.adobe.de
+127.0.0.1 adobe-dns-2.adobe.de
+127.0.0.1 adobe-dns-3.adobe.de
+127.0.0.1 ereg.wip3.adobe.de
+127.0.0.1 activate-sea.adobe.de
+127.0.0.1 wwis-dubc1-vip60.adobe.de
+127.0.0.1 activate-sjc0.adobe.de
+127.0.0.1 wwis-dubc1-vip60.adobe.de
+127.0.0.1 hl2rcv.adobe.de localhost
+save changes
+Then enter the serial key and everything works.
+ENJOY!!!

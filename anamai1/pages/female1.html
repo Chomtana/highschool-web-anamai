@@ -1,0 +1,119 @@
+﻿	<div class="container">
+		<div id="female-1" class="lide">
+			<h2>ระบบสืบพันธุ์เพศหญิง</h2>
+			<a class="back" href="#female">ย้อนกลับ</a>
+			<a class="back home" href="#home">หน้าแรก</a>
+			<div class="content">
+				<div class="fa">
+					<div class="picture">
+						<div id="bg">
+						</div>
+						<div id="ovary" class="c1 pic">
+						</div>
+						<div id="uterus" class="c2 pic">
+						</div>
+						<div id="oviduct" class="c3 pic">
+						</div>
+						<div id="vagina" class="c4 pic">
+						</div>
+						<div id="outside" class="c5 pic">
+						</div>
+					</div>
+					<article>
+						<ol>
+							<li class="detail"><a class="c1" href="#">1. รังไข่ (ovary)
+							</a>
+							<div>
+								เป็นอวัยวะของเพศหญิงมี 2 รังไข่อยู่ข้างซ้ายและข้างขวาของมดลูกทำหน้าที่สร้างเซลล์สืบพันธุ์เพศหญิง 
+								เรียกว่า ไข่ (egg) และสร้างฮอร์โมนเพศหญิง อีสโทรเจน 
+								(estrogen) โพรเจสเทอโรน (progesterone) และรีแลกซิน (relaxin) 
+								ซึ่งจะเริ่มทำหน้าที่เมื่อเข้าสู่วัยรุ่นอายุประมาณ 10-15 
+								ปี </div>
+							</li>
+							<li class="detail"><a class="c2" href="#">2. มดลูก (uterus)
+							</a>
+							<div>
+								เจริญมาจากท่อนำไข่ มีลักษณะคล้ายผลฝรั่งคว่ำ เป็นบริเวณที่ไข่เมื่อถูกผสมแล้วมาฝังตัวและเจริญเติบโต
+							</div>
+							</li>
+							<li class="detail"><a class="c3" href="#">3. ปีกมดลูกและท่อนำไข่ 
+							(oviduct) </a>
+							<div>
+								อยู่สองข้างของมดลูกยาวประมาณ 10 เซนติเมตร ปลายด้านที่อยู่ใกล้รังไข่มีลักษณะเป็นปากแตร 
+								ทำหน้าที่นำไข่ เข้ามาสู่ท่อนำไข่เพื่อผสมกับอสุจิ
+							</div>
+							</li>
+							<li class="detail"><a class="c4" href="#">4. ช่องคลอด (vagina)
+							</a>
+							<div>
+								เป็นช่องทางเข้าออกของอสุจิ และเป็นทางออกของทารกและประจำเดือน
+							</div>
+							</li>
+							<li class="detail"><a class="c5" href="#">5. อวัยวะภายนอก
+							</a>
+							<div>
+								ประกอบด้วย แคมใหญ่ แคมเล็ก คริสตอริส ต่อมในบริเวณช่องคลอดและปากช่องคลอด 
+								และทางผ่านของ น้ำปัสสาวะ (urethral orifice) </div>
+							</li>
+						</ol>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+<script> 
+	var pic = $('.picture > div');
+	var det = $('.detail > div').hide();
+	$('.picture > div').hover(function(){
+			$(this).addClass('hover');
+		}, function(){
+			$(this).removeClass('hover');
+	});
+	$('.c1').click(function(event){
+		pic.removeClass('clicked');
+		$('.picture > .c1').addClass('clicked');
+		det.slideUp();
+		$('.detail > .c1').next().slideDown();
+		$('.detail a').css("background-color","");
+		$('.detail > .c1').css("background-color","#CC303D");
+		event.preventDefault();
+	});
+	$('.c2').click(function(event){
+		pic.removeClass('clicked');
+		$('.picture > .c2').addClass('clicked');
+		det.slideUp();
+		$('.detail > .c2').next().slideDown();
+		$('.detail a').css("background-color","");
+		$('.detail > .c2').css("background-color","#CC303D");
+		event.preventDefault();
+	});
+	$('.c3').click(function(event){
+		pic.removeClass('clicked');
+		$('.picture > .c3').addClass('clicked');
+		det.slideUp();
+		$('.detail > .c3').next().slideDown();
+		$('.detail a').css("background-color","");
+		$('.detail > .c3').css("background-color","#CC303D");
+		event.preventDefault();
+	});
+	$('.c4').click(function(event){
+		pic.removeClass('clicked');
+		$('.picture > .c4').addClass('clicked');
+		det.slideUp();
+		$('.detail > .c4').next().slideDown();
+		$('.detail a').css("background-color","");
+		$('.detail > .c4').css("background-color","#CC303D");
+		event.preventDefault();
+	});
+	$('.c5').click(function(event){
+		pic.removeClass('clicked');
+		$('.picture > .c5').addClass('clicked');
+		det.slideUp();
+		$('.detail > .c5').next().slideDown();
+		$('.detail a').css("background-color","");
+		$('.detail > .c5').css("background-color","#CC303D");
+		event.preventDefault();
+	});
+	
+
+</script>
