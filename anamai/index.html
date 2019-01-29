@@ -248,6 +248,9 @@
 		hidescroll();
 		$("#intro").css("display","block");
 		document.getElementById("introvideo").play();
+		setTimeout(function() {
+			document.getElementById("introvideo").play();
+		},500);
 	}
 	
 	$(".back,.male,.female,.btl,#logo,.slide-sub nav a").click(function (e) {setTimeout(function(){onload();},100);});
