@@ -36,7 +36,7 @@
 	<section class="container">
 		<!-- intro -->
 		<div id="intro" align="center">
-			<video id="introvideo" src="video/intro.mp4" onEnded="introsound();"></video>
+			<video id="introvideo" src="video/intro.mp4" onEnded="introsound();" autoplay></video>
 			<!--<img class="loading" src="images/loading.jpg">-->
 			<!--<audio id="introvideosound" src="sound/intro.mp3" onEnded="introsound();"></audio>-->
             <audio id="introsound" src="sound/sound4.mp3" onEnded="introend();"></audio>
@@ -248,9 +248,6 @@
 		hidescroll();
 		$("#intro").css("display","block");
 		document.getElementById("introvideo").play();
-		setTimeout(function() {
-			document.getElementById("introvideo").play();
-		},500);
 	}
 	
 	$(".back,.male,.female,.btl,#logo,.slide-sub nav a").click(function (e) {setTimeout(function(){onload();},100);});
